@@ -5,9 +5,9 @@ Please fill input and out put variables
 #>
 
 
-$Email_list = "C:\Temp\TechOps_Groups\TechOps_Members.txt"
+$Email_list = '<Add Path for input>'
 
-$Output_csv = "C:\Temp\TechOps_Groups\SamAcctNames.txt"
+$Output_csv = '<Add Path for output>'
 
 
 Get-Content -Path $Email_list |
