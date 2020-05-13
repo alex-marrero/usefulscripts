@@ -5,19 +5,15 @@ Please fill input and out put variables
 #>
 
 
- $Email_list = "<Path to input>.txt"
+$Email_list = "C:\Temp\TechOps_Groups\TechOps_Members.txt"
 
- $Output_csv = "<Path to Output>.csv"
+$Output_csv = "C:\Temp\TechOps_Groups\SamAcctNames.txt"
 
 
 Get-Content -Path $Email_list |
- ForEach-Object{ Get-ADUser -Filter {EmailAddress -eq $_} } | 
-  ForEach-Object {new-object psobject -Property @{
-                                     'First Name' = $_.GivenName
-                                     'Last Name' = $_.SurName
-                                     'Login ID'    = $_.SamAccountName                                   
-                                     }
-   } |
-     Export-CSV -Path  $Output_csv -NoTypeInformation
-
-  
+ForEach-Object{ Get-ADUser -Filter {EmailAddress -eq $_} } | 
+ ForEach-Object {new-object psobject -Property @{
+                                    'Login ID'    = $_.SamAccountName                                   
+                                    }
+  } |
+    Out-File $Output_csv
