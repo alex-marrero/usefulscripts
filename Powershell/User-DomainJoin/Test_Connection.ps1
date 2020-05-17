@@ -1,4 +1,4 @@
-# Wait for connection to Domain Controller
+# Wait for connection to Domain Controller then Execute $Welcome_Message_Location and $DCip
 
 $DCip = #IP Address or FQDN of your Domain Controller
 
