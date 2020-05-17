@@ -1,3 +1,5 @@
+#Will inform End-user the Computer is "Waiting for Network" to complete provisioning.
+
 Add-Type -AssemblyName System.Windows.Forms
 
 $Form = New-Object system.Windows.Forms.Form
