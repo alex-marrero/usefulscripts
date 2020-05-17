@@ -1,4 +1,4 @@
-#End User Domain Join
+# End User Domain Join
 
 This Solution is not pretty but was used when our Partner was preparing Company Devices but VPN tunnel had not yet been setup to automate during provisioning. Vendor would Prepare Devices and add the files in the locations specified. Here is what the experience looks like;
 
@@ -11,7 +11,7 @@ This Solution is not pretty but was used when our Partner was preparing Company 
 
 Like stated above not the best solution but this was prior to Setting vendor up with VPN Tunnel to Automate this entire process removing steps required by Partner and End-user.
 
-**Setup
+## Setup
 
 >Place all Scripts but StartDJ.bat in in accessible location during unattended boot
 
