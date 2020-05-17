@@ -1,6 +1,6 @@
 # End User Domain Join
 
-This Solution is not pretty but was used when our Partner was preparing Company Devices but VPN tunnel had not yet been setup to automate during provisioning. Vendor would Prepare Devices and add the files in the locations specified. Here is what the experience looks like;
+This Solution is not pretty but was used when our Partner was preparing Company Devices but VPN tunnel had not yet been setup to automate during provisioning. Vendor would Prepare Devices and add the files in the locations specified. Here is what the experience looks like:
 
 - Computer is Imaged
 - Vendor places files in Specified Location. or files could be dropped in during imaging
